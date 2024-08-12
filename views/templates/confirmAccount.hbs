@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+
+    <style>
+        /*
+        #105CAA
+        */
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans&family=Poppins:wght@200&display=swap');
+
+        * {
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'PT Sans', sans-serif;
+        }
+
+        .link {
+            color: #229ffb;
+            text-decoration: none;
+        }
+
+        @media (max-width:967px) {
+            .img-holder {
+                width: 90% !important;
+                margin: 0 auto !important;
+            }
+
+            body {
+                background-color: rgb(254, 253, 253);
+                padding: 0 1.5rem;
+                padding-top: 6rem !important;
+            }
+
+            .logo-container {
+                width: 100%;
+                margin: 0 auto !important;
+                margin-bottom: 1.5rem;
+            }
+
+            fieldset {
+                padding-top: 2rem;
+                position: relative;
+                width: 90%;
+                background-color: rgb(254, 253, 253);
+                margin: 0 auto;
+            }
+
+            legend {
+                font-weight: 500 !important;
+                font-size: 18px !important;
+                color: #030801 !important;
+            }
+
+            .description-wrapper {
+                font-weight: 400;
+                font-size: 15px;
+                color: rgb(39, 43, 45);
+            }
+
+            .address {
+                text-align: center;
+                font-size: 13px;
+            }
+
+            footer {
+                margin-top: 3rem;
+                background-color: rgb(246, 249, 251);
+                padding: 10px 0;
+
+            }
+
+            fieldset {
+                border-radius: 8px;
+                border: 0 !important;
+                padding: 14px 18px;
+            }
+
+            legend {
+                text-align: center;
+                font-size: x-large;
+                color: rgb(31, 32, 34);
+                font-weight: bold;
+            }
+
+            .container .tooltip {
+                font-size: 14px;
+                text-align: center;
+                color: #474b4c;
+            }
+
+            .number-pad {
+                text-align: center;
+                align-items: center;
+                padding: 10px 0px;
+                background: #0085fb;
+                border-radius: 8px;
+                color: white;
+                font-size: 28px;
+            }
+
+            .appreciation {
+                margin-top: 1.5rem !important;
+            }
+
+            .highlight {
+                font-size: 13px;
+                align-items: center;
+                text-align: center;
+                margin-top: 3rem !important;
+            }
+
+            .icon-container {
+                display: flex;
+                width: fit-content;
+                margin: 0 auto;
+                margin-top: 1.8rem !important;
+                justify-content: space-evenly;
+            }
+
+            .icon-container div {
+                width: fit-content;
+                height: fit-content;
+                padding: 1rem;
+                background: #fcfdff;
+                border-radius: 8px;
+            }
+
+        }
+
+        .hr {
+            margin-top: 1rem !important;
+            height: 0.5px;
+            background: #ccdbdb;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="img-holder">
+        <img src="cid:logo" alt={{app_name}} class="logo-container">
+    </div>
+    <fieldset>
+        <div class="container">
+
+            <h3 class="description-wrapper">
+                Hello Customer! 👋,
+                <br>
+                <br>
+                Please follow the link below to confirm your request and proceed
+                <br>
+                <br>
+                <div style="margin: 0 auto !important; width: fit-content; border-radius: 8px;">
+                    <a href="{{url}}" style="padding: 10px 12px; background: #2299fb; color: white; border:none">Verify
+                    now</a>
+                </div>
+
+                <br>
+            </h3>
+
+        </div>
+        <p class="appreciation">Thanks for choosing {{app_name}}</p>
+
+
+        <hr class="hr">
+
+        <p class="highlight">Keep in touch!</p>
+
+        <div class="icon-container">
+            <div>
+                <img src="cid:facebook">
+            </div>
+            <div>
+                <img src="cid:twitter-x">
+            </div>
+            <div>
+                <img src="cid:youtube">
+            </div>
+            <div>
+                <img src="cid:instagram">
+            </div>
+
+
+        </div>
+        <footer>
+            <p class="address">{{location}}</p>
+        </footer>
+
+
+    </fieldset>
+
+
+</body>
+
+</html>
